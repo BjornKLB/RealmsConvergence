@@ -1,0 +1,126 @@
+TO DO 
+================================================================
+Game Modes to make
+	- Round-Based Survival
+	- Outbreak
+	- Turned
+	- Grief
+	- Is This The Reel Life?
+================================================================
+-Interaction System-
+Give player health
+Give zombies attacks
+-Point System-
+Jumping
+FIX SPAWNING
+
+
+
+
+Zombies Behaviour
+	-Spawning-
+	-Taking Damage-
+	-Dieing-
+	-Pathfinding towards the player-
+	Barrier breaking
+	Attacking
+	-Give Points-
+	Effect Behaviour
+
+Player Behaviour
+	-Movement-
+	Jumping
+	-Shooting-
+	Aiming
+	Knifing
+	Taking Damage
+	-Interacting-
+	Dieing
+	Throw grenades
+	Switch Weapons
+	Go prone
+
+Grimm Zombies Behaviour
+	Spawning
+	Taking Damage
+	Dieing
+	Pathfinding towards the player
+	Attacking
+	Charging
+	Give Points
+	Drop Ember Cecilia
+
+Waves
+	-Wave Counter-
+
+Workbenches
+	Interactable
+	Check for needed items
+	Give player correct item
+
+Pick-ups
+	Interactable
+	Add item to HUD
+	Add item to inventery
+
+Trials
+	Interactable
+	Spawn Trials Wave
+	Add progress to HUD
+
+Shoot-ables
+	Interactable
+	Add progress to HUD
+
+Perks
+	-Interactable-
+	Check if power is on
+	-Remove Points-
+	-Give perk-
+	Add perk to HUD
+	Give Points
+
+Wall-Guns
+	Interactable
+	Remove Points
+	Give Gun
+	Give Ammo
+	
+Mystery Box
+	Interactable
+	Pick Random Weapon
+	Remove Points
+	Give weapon
+
+Pack-a-Punch
+	Interactable
+	Check if power is on
+	Remove Points
+	Check if weapon is  upgraded
+	Upgrade weapon
+	Give ammo	
+
+Doors
+	Interactable
+	Remove Points
+
+Jump-Pad
+	Interactable
+	Check if power is on
+	Remove Points
+	Launch Player	
+
+Levers
+	Interactable
+	Add progress to HUD
+
+Power
+	Interactable
+	On/Off
+
+Upgrade Altars
+	Interactable
+	Give Max Ammo
+	Remove weapon
+	Suck souls
+	Give Weapon
