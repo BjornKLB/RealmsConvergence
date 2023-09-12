@@ -18,7 +18,7 @@ public class EnemyController2 : MonoBehaviour
 
     public int attackDamage = 10;
     public int damping = 1;
-    public int speed;
+    public float speed;
 
     public bool isDead = false;
 
@@ -26,12 +26,16 @@ public class EnemyController2 : MonoBehaviour
 
     public PlayerHealth HealthReference;
 
+    public NavMeshAgent agent;
+
     public void Start()
     {
+        //set the speed for the pathfinding
+        agent.speed = speed;
         // Find the target and set health
         player = GameObject.Find("John").transform;
         Health();
-        timerDuration = 1;
+        timerDuration = 0.5f;
     }
 
     public void Update()
@@ -43,6 +47,7 @@ public class EnemyController2 : MonoBehaviour
             if (distance <= attackRange && !GameObject.Find("GameController").GetComponent<GameController>().player1Attacked)
             {
                 timer += Time.deltaTime;
+                agent.speed = 0;
 
                 if (timer >= timerDuration)
                 {
@@ -56,6 +61,7 @@ public class EnemyController2 : MonoBehaviour
             else
             {
                 timer = 0;
+                agent.speed = speed;
             }
 
             if (health <= 0)

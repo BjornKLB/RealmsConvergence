@@ -30,6 +30,12 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+        //Maiking sure the health doesn't go negative
+        if (healthPlayer < 0)
+        {
+            healthPlayer = 0;
+        }
+
         // Regenerate health
         if (healthDecreased)
         {
@@ -71,7 +77,7 @@ public class PlayerHealth : MonoBehaviour
             GameObject.Find("PerkController").GetComponent<PerkController>().perkTotal = 0;
         }
 
-        if (healthPlayer <= 0)
+        if (healthPlayer <= 0 && !downed)
         {
             dead = true;
         }
